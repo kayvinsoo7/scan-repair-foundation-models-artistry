@@ -1,0 +1,11 @@
+{
+ "states": 2888,
+ "miss_small": 0.03254847645429363,
+ "miss_large": 0.0017313019390581717,
+ "max_gap": 1.0630597815699572,
+ "p05_captured": 1.0,
+ "hist_n": 2000,
+ "hist_max_err": 0.009777546349543531,
+ "hist_same_best": true,
+ "hist_top50_overlap": 50
+}

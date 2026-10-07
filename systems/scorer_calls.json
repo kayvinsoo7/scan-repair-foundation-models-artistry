@@ -1,0 +1,8 @@
+{
+ "scorer_calls": 64813,
+ "fit_seconds": 35.16366936399993,
+ "discovery_rows": 2400,
+ "features": 30,
+ "accepted_terms": 1,
+ "modules_patched": 8
+}

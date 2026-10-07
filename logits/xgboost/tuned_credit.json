@@ -1,0 +1,14 @@
+{
+ "cv_logloss": 0.42298049650459235,
+ "params": {
+  "max_depth": 5,
+  "learning_rate": 0.016959218348127005,
+  "min_child_weight": 2.8159086147467853,
+  "subsample": 0.7763547243504472,
+  "colsample_bytree": 0.5751011705313505,
+  "reg_lambda": 0.317293262953763,
+  "reg_alpha": 0.05682559158789693
+ },
+ "n_trees": 441,
+ "tuning_seconds": 142.396901995
+}

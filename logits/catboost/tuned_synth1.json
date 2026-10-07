@@ -1,0 +1,12 @@
+{
+ "cv_logloss": 0.3008811444078795,
+ "params": {
+  "depth": 5,
+  "learning_rate": 0.03746338070416963,
+  "l2_leaf_reg": 1.6667369771096814,
+  "random_strength": 0.43585772617087004,
+  "bagging_temperature": 0.4743331153335445
+ },
+ "n_trees": 228,
+ "tuning_seconds": 172.37697061400013
+}

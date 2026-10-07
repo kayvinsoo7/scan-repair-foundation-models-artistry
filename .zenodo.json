@@ -1,0 +1,9 @@
+{
+  "title": "Scan Repair for Foundation Models: artifacts (saved logits, correction results and timings)",
+  "upload_type": "dataset",
+  "description": "Saved base-model predictions (TabPFN-2.5 context ladder, TabICLv2, tuned XGBoost and CatBoost), every post-hoc correction result, and the CPU/GPU timings behind the AccML 2027 paper 'Fix What the Model Leaves Behind: Fast Subgroup Repair for Tree Ensembles and Tabular Foundation Models'. Used with the code repository scan-repair-foundation-models to rebuild every table, figure and number of the paper on a CPU.",
+  "creators": [{"name": "<FAMILY NAME>, <GIVEN NAMES>", "affiliation": "<AFFILIATION>"}],
+  "license": "cc-by-4.0",
+  "keywords": ["tabular foundation models", "TabPFN", "TabICL", "XGBoost", "CatBoost", "post-hoc model repair", "subgroup calibration", "subset scanning", "in-context learning", "inference cost"],
+  "related_identifiers": [{"identifier": "https://github.com/<GITHUB-USER>/scan-repair-foundation-models", "relation": "isSupplementTo", "scheme": "url"}]
+}

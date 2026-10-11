@@ -1,0 +1,37 @@
+| dataset   | method                 |   median_params |   median_cpu_seconds |   max_cpu_seconds |
+|:----------|:-----------------------|----------------:|---------------------:|------------------:|
+| credit    | Platt                  |            2.00 |                 0.08 |              0.29 |
+| credit    | Platt->scan            |            3.00 |                 2.10 |             11.65 |
+| credit    | beta                   |            3.00 |                 0.08 |              0.13 |
+| credit    | boosted residual (XGB) |          314.00 |                 0.14 |              0.44 |
+| credit    | frozen                 |            0.00 |                 0.00 |              0.00 |
+| credit    | histogram binning      |           15.00 |                 0.00 |              0.01 |
+| credit    | isotonic               |           81.00 |                 0.01 |              0.01 |
+| credit    | residual tree          |            2.00 |                 0.13 |              0.65 |
+| credit    | scan                   |            1.00 |                 6.16 |             17.47 |
+| credit    | scan a=0.01            |            1.00 |                 4.80 |             18.45 |
+| credit    | temperature            |            1.00 |                 0.00 |              0.01 |
+| synth1    | Platt                  |            2.00 |                 0.01 |              0.08 |
+| synth1    | Platt->scan            |            3.00 |                 3.37 |             13.04 |
+| synth1    | beta                   |            3.00 |                 0.02 |              0.08 |
+| synth1    | boosted residual (XGB) |          161.50 |                 0.11 |              0.26 |
+| synth1    | frozen                 |            0.00 |                 0.00 |              0.00 |
+| synth1    | histogram binning      |           15.00 |                 0.00 |              0.01 |
+| synth1    | isotonic               |           46.00 |                 0.00 |              0.01 |
+| synth1    | oracle subgroup        |            1.00 |                 0.00 |              0.00 |
+| synth1    | residual tree          |            2.00 |                 0.12 |              0.19 |
+| synth1    | scan                   |            1.00 |                 6.12 |             14.18 |
+| synth1    | scan a=0.01            |            1.00 |                 5.43 |             12.64 |
+| synth1    | temperature            |            1.00 |                 0.00 |              0.00 |
+| synth8    | Platt                  |            2.00 |                 0.01 |              0.09 |
+| synth8    | Platt->scan            |            3.00 |                 5.53 |             16.26 |
+| synth8    | beta                   |            3.00 |                 0.01 |              0.16 |
+| synth8    | boosted residual (XGB) |          192.50 |                 0.11 |              0.26 |
+| synth8    | frozen                 |            0.00 |                 0.00 |              0.00 |
+| synth8    | histogram binning      |           15.00 |                 0.00 |              0.01 |
+| synth8    | isotonic               |           47.50 |                 0.00 |              0.01 |
+| synth8    | oracle subgroup        |            1.00 |                 0.00 |              0.00 |
+| synth8    | residual tree          |            2.00 |                 0.12 |              0.21 |
+| synth8    | scan                   |            1.00 |                 5.79 |             15.09 |
+| synth8    | scan a=0.01            |            1.00 |                 5.02 |             13.58 |
+| synth8    | temperature            |            1.00 |                 0.00 |              0.00 |

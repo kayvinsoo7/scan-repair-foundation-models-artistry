@@ -19,6 +19,7 @@ logits/                          frozen base-model predictions (stage 1; GPU for
   xgboost/  catboost/            tuned trees, full training split (30 files each) + tuned hyperparameters (tuned_*.json)
   tabicl/                        TabICLv2, full training split as context, T4 GPU (30 files)
   tabicl_a100/                   the same run repeated on an A100 (GPU-consistency check)
+  tabicl_ladder/                 TabICLv2 at the same nested contexts as the TabPFN-2.5 ladder (240 files)
   discovery/{xgboost,catboost,tabpfn,tabicl}/   discovery-power experiment, n = 19,200 (40 files each)
 corrections/                     every post-hoc correction applied to those logits (stage 2; CPU)
   <same folders>/posthoc.csv     one row per (dataset, seed, context, correction): test log-loss, Brier, AUROC, ECE,
@@ -28,6 +29,8 @@ corrections/                     every post-hoc correction applied to those logi
 timing/
   timing_cpu_2core.csv           TabPFN-2.5 seconds per 1,000 predictions by context, 2-core x86-64 CPU
   timing_gpu_t4.csv              the same on a free-tier Colab T4 GPU
+  timing_tabicl_cpu_2core.csv, timing_tabicl_gpu_t4.csv   the same for TabICLv2 (CPU: random-weight checkpoint, batch_size=1)
+  tabicl_v2_config.json          TabICLv2 architecture settings (used to build the CPU-timing checkpoint; no weights)
 systems/                         implementation experiments (Sec. VI) and in-text checks
   cost_breakdown.csv, cost_scaling.csv     profile of the original vs compiled scorer
   cost4_scaling.csv, cost4_breakdown.csv   three implementations x six problem sizes; profiled parts of one fit
@@ -55,7 +58,7 @@ SHA256SUMS                       checksums of every file
 
 | Folder | Script in the code repository | Hardware |
 |---|---|---|
-| `logits/tabpfn25_ladder`, `logits/tabicl`, `logits/discovery/{tabpfn,tabicl}` | `base_tabpfn_ladder.py`, `base_tabicl.py`, `base_fm_discovery.py` (`notebooks/foundation_model_logits_colab.ipynb`) | Colab T4 GPU; `tabpfn` 9.1.0, `tabicl` 2.2.0 |
+| `logits/tabpfn25_ladder`, `logits/tabicl`, `logits/tabicl_ladder`, `logits/discovery/{tabpfn,tabicl}` | `base_tabpfn_ladder.py`, `base_tabicl.py` (`LADDER=...` for the ladder), `base_fm_discovery.py` (`notebooks/*.ipynb`) | Colab T4 GPU; `tabpfn` 9.1.0, `tabicl` 2.2.0 |
 | `logits/{xgboost,catboost}`, `logits/discovery/{xgboost,catboost}` | `base_trees.py` | 2-core CPU |
 | `corrections/**` | `corrections.py`, `ladder_report.py` | 2-core CPU |
 | `timing/` | `timing_tabpfn.py` (CPU: random-weight checkpoint of the same architecture, `make_timing_checkpoint.py`) | CPU / T4 |

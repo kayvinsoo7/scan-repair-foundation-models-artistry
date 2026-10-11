@@ -11,7 +11,7 @@ a CPU, in minutes.
 
 <!-- After the first Zenodo release: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.YYYYYYY.svg)](https://doi.org/10.5281/zenodo.YYYYYYY) -->
 
-## Contents (about 80 MB)
+## Contents (about 120 MB)
 
 ```
 logits/                          frozen base-model predictions (stage 1; GPU for the foundation models)

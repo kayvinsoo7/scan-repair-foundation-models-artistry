@@ -5,5 +5,5 @@
   "creators": [{"name": "<FAMILY NAME>, <GIVEN NAMES>", "affiliation": "<AFFILIATION>"}],
   "license": "cc-by-4.0",
   "keywords": ["tabular foundation models", "TabPFN", "TabICL", "XGBoost", "CatBoost", "post-hoc model repair", "subgroup calibration", "subset scanning", "in-context learning", "inference cost"],
-  "related_identifiers": [{"identifier": "https://github.com/<GITHUB-USER>/scan-repair-foundation-models", "relation": "isSupplementTo", "scheme": "url"}]
+  "related_identifiers": [{"identifier": "https://github.com/kayvinsoo7/scan-repair-foundation-models", "relation": "isSupplementTo", "scheme": "url"}]
 }

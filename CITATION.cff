@@ -6,6 +6,6 @@ authors:
   - family-names: "<FAMILY NAME>"
     given-names: "<GIVEN NAMES>"
 license: CC-BY-4.0
-repository-code: "https://github.com/<GITHUB-USER>/scan-repair-foundation-models"
-url: "https://github.com/<GITHUB-USER>/scan-repair-foundation-models-artifacts"
+repository-code: "https://github.com/kayvinsoo7/scan-repair-foundation-models"
+url: "https://github.com/kayvinsoo7/scan-repair-foundation-models-artifacts"
 keywords: [tabular foundation models, TabPFN, TabICL, XGBoost, CatBoost, post-hoc model repair, subgroup calibration, reproducibility]

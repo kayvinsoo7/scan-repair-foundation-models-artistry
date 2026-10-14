@@ -5,7 +5,7 @@ Behind: Fast Subgroup Repair for Tree Ensembles and Tabular Foundation Models*. 
 XGBoost and CatBoost on a synthetic planted-subgroup benchmark and on Credit Default.
 
 The code lives in the companion repository
-[`scan-repair-foundation-models`](https://github.com/<GITHUB-USER>/scan-repair-foundation-models). Clone both side by
+[`scan-repair-foundation-models`](https://github.com/kayvinsoo7/scan-repair-foundation-models). Clone both side by
 side and run `make paper-inputs` there: every table, figure and number of the paper is rebuilt from the files below on
 a CPU, in minutes.
 

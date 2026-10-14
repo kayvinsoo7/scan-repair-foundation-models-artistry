@@ -1,4 +1,4 @@
-# Scan Repair for Foundation Models: artifacts
+# Scan Repair for Foundation Models: data and results
 
 **Saved base-model predictions, correction results and timings** for the AccML 2027 paper *Fix What the Model Leaves
 Behind: Fast Subgroup Repair for Tree Ensembles and Tabular Foundation Models*. These cover TabPFN-2.5, TabICLv2,

@@ -39,6 +39,9 @@ systems/                         implementation experiments (Sec. VI) and in-tex
   scorer_calls.json                        exact-scorer calls in one default fit (64,813)
   discovery_oracle_gain.csv                likelihood gain of the true subgroup on discovery rows, per base model
   credit_baseline.csv, credit_xgb_params.json   original study's Credit Default tree baseline
+  calibrated_acceptance/                   Monte-Carlo null for the scan's acceptance test (TabPFN-2.5; synth8, synth1;
+                                           seeds 1-10; contexts 2,000 and full; B = 200): null/ (one row per replicate),
+                                           fits/ and summary.csv (nominal vs calibrated refit), report.csv, timing_scorer.csv
 SHA256SUMS                       checksums of every file
 ```
 
@@ -63,6 +66,7 @@ SHA256SUMS                       checksums of every file
 | `corrections/**` | `corrections.py`, `ladder_report.py` | 2-core CPU |
 | `timing/` | `timing_tabpfn.py` (CPU: random-weight checkpoint of the same architecture, `make_timing_checkpoint.py`) | CPU / T4 |
 | `systems/` | `systems_*.py`, `discovery_oracle_gain.py`, `credit_baseline.py` | 2-core CPU |
+| `systems/calibrated_acceptance/` | `calibrated_acceptance.py`, `calibrated_acceptance_report.py` (timing: `FAST=0 B=5 ONLY=...`) | 2-core CPU |
 
 The correction results are deterministic given the logits: re-running `corrections.py` on these logits reproduces
 `posthoc.csv` to machine precision (`make corrections` in the code repository checks this row by row).
